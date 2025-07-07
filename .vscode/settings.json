@@ -1,0 +1,6 @@
+{
+  "terminal.integrated.env.windows": {
+    "PATH": "C:\\Program Files\\nodejs;C:\\Users\\siglo\\AppData\\Roaming\\npm;${env:PATH}"
+  },
+  "bitoAI.codeCompletion.enableAutoCompletion": false
+}
