@@ -15,7 +15,7 @@ const ProjectCard = ({ title, description, url, img, tags }: Props) => (
     className="glassmorphism rounded-2xl shadow-glass-light dark:shadow-glass-dark overflow-hidden h-full flex flex-col border border-white border-opacity-20 dark:border-gray-700 dark:border-opacity-50 min-w-[300px] md:min-w-[350px] lg:min-w-[400px]"
   >
     <a href={url} target="_blank" rel="noopener noreferrer">
-      <img src={img} alt={title} className="w-full h-48 object-cover" loading="lazy" />
+      <img src={img} alt={title} className="w-full h-64 object-contain" loading="lazy" />
     </a>
     <div className="p-6 flex flex-col flex-grow">
       <h3 className="text-xl font-bold text-text-light dark:text-text-dark">{title}</h3>

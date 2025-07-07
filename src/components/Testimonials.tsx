@@ -23,13 +23,13 @@ const testimonials = [
   {
     quote: "The insights provided by Dexo were invaluable for our computer studies curriculum. Highly recommend their training.",
     name: "Heubert M. Ferolino",
-    title: "Faculty, College of Computer Studies, University of Cebu",
+    title: "Faculty",
     avatar: "/assets/images/Heubert Ferolino 1.jfif",
   },
   {
     quote: "Dexo's approach to data education is truly impactful. Our students greatly benefited from their practical sessions.",
     name: "Andrew Mores",
-    title: "Faculty, Foundation University | College of Computer Studies",
+    title: "Faculty",
     avatar: "/assets/images/Andrew Mores.webp",
   },
 ];
