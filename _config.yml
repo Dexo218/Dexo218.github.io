@@ -1,5 +1,3 @@
 title: Think
-description: AI Automation & Data Skills
-theme: jekyll-theme-minimal   # any GitHub-supported theme works
-show_downloads: false
-favicon: /favicon.ico         # optional – add later if desired
+description: AI Automation and Data Skills
+theme: jekyll-theme-hacker
