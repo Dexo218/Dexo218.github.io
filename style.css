@@ -63,4 +63,9 @@ textarea{resize:vertical}
 /* ----------  small screen tweaks  ---------- */
 @media(max-width:680px){
  .nav ul{display:none}
+
+  .card .icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 1rem;
 }
