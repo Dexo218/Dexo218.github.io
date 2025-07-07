@@ -1,11 +1,16 @@
+---
+layout: default
+title: Home
+---
+
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Think · AI Automation & Data Skills</title>
+  <title>{{ site.title }} · {{ page.title }}</title>
 
-  <!-- Font & main stylesheet -->
+  <!-- Font + custom stylesheet -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -30,7 +35,7 @@
       <p>AI-driven workflows and the data skills to back them up.</p>
       <div class="cta">
         <a class="btn primary" href="#contact">Start a project</a>
-        <a class="btn outline" href="#tutorials">Learn skills</a>
+        <a class="btn outline"  href="#tutorials">Learn skills</a>
       </div>
     </div>
   </header>
@@ -43,7 +48,6 @@
       <!-- AI Workflow Automation -->
       <article class="card fade">
         <div class="icon">
-          <!-- gear/network SVG -->
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none"
                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
@@ -51,32 +55,30 @@
           </svg>
         </div>
         <h3>AI Workflow Automation</h3>
-        <p>Custom ChatGPT + Zapier / Make pipelines that shave hours off your week.</p>
-        <a class="btn small" href="#contact">From $29 / task</a>
+        <p>Custom ChatGPT + Zapier&nbsp;/&nbsp;Make pipelines that save hours every week.</p>
+        <a class="btn small" href="#contact">From $29&nbsp;/ task</a>
       </article>
 
       <!-- Data-Analytics Training -->
       <article class="card fade">
         <div class="icon">
-          <!-- bar-chart SVG -->
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none"
                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <line x1="3" y1="3" x2="3" y2="21"/>
-            <line x1="21" y1="21" x2="3" y2="21"/>
-            <rect x="7" y="13" width="3" height="5"/>
-            <rect x="12" y="9" width="3" height="9"/>
-            <rect x="17" y="5" width="3" height="13"/>
+            <line x1="3" y1="21" x2="21" y2="21"/>
+            <rect x="7"  y="13" width="3" height="5"/>
+            <rect x="12" y="9"  width="3" height="9"/>
+            <rect x="17" y="5"  width="3" height="13"/>
           </svg>
         </div>
         <h3>Data-Analytics Training</h3>
-        <p>Excel, Power BI & SQL—live cohorts or self-paced modules.</p>
+        <p>Excel, Power BI &amp; SQL—live cohorts or self-paced modules.</p>
         <a class="btn outline small" href="#tutorials">View curriculum</a>
       </article>
 
       <!-- Free Audit & Strategy -->
       <article class="card fade">
         <div class="icon">
-          <!-- target SVG -->
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none"
                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <circle cx="12" cy="12" r="10"/>
@@ -84,8 +86,8 @@
             <circle cx="12" cy="12" r="2"/>
           </svg>
         </div>
-        <h3>Free Audit & Strategy</h3>
-        <p>Map ROI, tool stack & quick wins—no obligation.</p>
+        <h3>Free Audit &amp; Strategy</h3>
+        <p>Map ROI, tool stack &amp; quick wins—no obligation.</p>
         <a class="btn small" href="#contact">Book a slot</a>
       </article>
     </div>
@@ -97,7 +99,6 @@
     <div class="cards">
       <a class="card link fade" href="Excel.html">
         <div class="icon">
-          <!-- keyboard SVG -->
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none"
                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <rect x="2" y="6" width="20" height="12" rx="2"/>
@@ -110,7 +111,6 @@
 
       <a class="card link fade" href="powerbi.html">
         <div class="icon">
-          <!-- pie chart SVG -->
           <svg width="48" height="48" viewBox="0 0 24 24" fill="none"
                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M21 12a9 9 0 1 1-9-9v9z"/>
@@ -127,8 +127,8 @@
   <section id="contact" class="section">
     <h2 class="section-title fade">Let’s talk</h2>
     <form class="contact fade">
-      <input name="name"  type="text"   placeholder="Name"  required>
-      <input name="email" type="email"  placeholder="Email" required>
+      <input  name="name"  type="text"   placeholder="Name"  required>
+      <input  name="email" type="email"  placeholder="Email" required>
       <select name="topic" required>
         <option value="">I’m interested in…</option>
         <option>Automation</option>
