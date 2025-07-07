@@ -1,1 +1,47 @@
+---
+layout: default
+title: Power BI Foundations
+---
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>{{ page.title }} · {{ site.title }}</title>
+
+  <!-- shared font + styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- mini-nav back to home -->
+  <nav class="nav"><div class="inner"><a class="logo" href="index.html">Think</a></div></nav>
+
+  <!-- hero header -->
+  <header class="hero" style="padding:100px 1.6rem 60px">
+    <div class="container">
+      <h1>{{ page.title }}</h1>
+      <p>Turn raw data into interactive insights with Power Query, DAX and dashboards.</p>
+      <a href="index.html#tutorials" class="btn primary" style="margin-top:1.6rem">← Back to tutorials</a>
+    </div>
+  </header>
+
+  <!-- curriculum snapshot -->
+  <section class="section">
+    <h2 class="section-title fade">What you’ll learn</h2>
+    <ul class="card fade" style="margin:auto;max-width:620px;text-align:left">
+      <li>Connecting Excel / CSV / database sources</li>
+      <li>Cleaning & shaping data in Power Query</li>
+      <li>Data modeling & relationships (star schema)</li>
+      <li>DAX essentials: CALCULATE, SUMX, FILTER</li>
+      <li>Building interactive visuals & drill-through</li>
+      <li>Publishing, refreshing & sharing dashboards</li>
+    </ul>
+  </section>
+
+  <footer class="footer">© 2025 Think</footer>
+  <script src="script.js"></script>
+</body>
+</html>
