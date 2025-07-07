@@ -1,26 +1,22 @@
-/* --------  fade-in on scroll  -------- */
-const faders=[...document.querySelectorAll(".fade")];
-const io=new IntersectionObserver((entries)=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");io.unobserve(e.target);}});
-},{threshold:.15});
-faders.forEach(el=>io.observe(el));
+/* fade-in on scroll */
+const io=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('show');io.unobserve(x.target);}}),{threshold:.15});
+document.querySelectorAll('.fade').forEach(el=>io.observe(el));
 
-/* --------  smooth section links  -------- */
+/* smooth in-page links */
 document.querySelectorAll('a[href^="#"]').forEach(a=>{
-  a.addEventListener("click",e=>{
-    const tgt=document.querySelector(a.getAttribute("href"));
-    if(tgt){ e.preventDefault(); tgt.scrollIntoView({behavior:"smooth",block:"start"});}
+  a.addEventListener('click',e=>{
+    const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
   });
 });
 
-/* --------  contact form mailto helper  -------- */
-const form=document.querySelector(".contact");
-if(form){
-  form.addEventListener("submit",e=>{
+/* mailto handler */
+const f=document.querySelector('.contact');
+if(f){
+  f.addEventListener('submit',e=>{
     e.preventDefault();
-    const fd=new FormData(form);
-    const subj=`${fd.get("topic")||"General"} inquiry from ${fd.get("name")}`;
-    const body=`Name: ${fd.get("name")}\nEmail: ${fd.get("email")}\nTopic: ${fd.get("topic")}\n\n${fd.get("msg")}`;
-    window.location=`mailto:siglosdexterlloyd85@gmail.com?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
+    const d=new FormData(f);
+    const s=`${d.get('topic')||'General'} inquiry — ${d.get('name')}`;
+    const b=`Name: ${d.get('name')}\nEmail: ${d.get('email')}\nTopic: ${d.get('topic')}\n\n${d.get('msg')}`;
+    window.location=`mailto:siglosdexterlloyd85@gmail.com?subject=${encodeURIComponent(s)}&body=${encodeURIComponent(b)}`;
   });
 }
